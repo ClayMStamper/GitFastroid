@@ -124,8 +124,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 138}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -11, y: 138.2}
+  m_SizeDelta: {x: 160, y: 43.571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16018085
 MonoBehaviour:
@@ -322,8 +322,8 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 110.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -11.5, y: 114}
+  m_SizeDelta: {x: 158.7, y: 40.003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123502712
 MonoBehaviour:
@@ -2385,6 +2385,16 @@ MonoBehaviour:
   - pen!s
   - sh!t
   - slut
+  - '@$$'
+  - '@55'
+  - a55
+  - 5hit
+  - $hit
+  - $h!t
+  - $h1t
+  - sh1t
+  - sh!t
+  - 5lut
 --- !u!1001 &1431415228
 Prefab:
   m_ObjectHideFlags: 0
@@ -3371,8 +3381,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00020432146, y: -126}
-  m_SizeDelta: {x: 916.88, y: 115}
+  m_AnchoredPosition: {x: -0.00015698, y: -127}
+  m_SizeDelta: {x: 916.88, y: 133.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135597436
 MonoBehaviour:

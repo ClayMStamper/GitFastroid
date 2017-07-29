@@ -3,13 +3,18 @@ using System.Collections;
 
 public class TutorialGameDeactivator : MonoBehaviour {
 
+	public GameObject[] objectsToDeactivate;
+
 	// Use this for initialization
 	void Start () {
-	
+		foreach (GameObject thing in objectsToDeactivate){
+			thing.SetActive (false);
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void SetActive(){
+		foreach (GameObject thing in objectsToDeactivate){
+			thing.SetActive (true);
+		}
 	}
 }

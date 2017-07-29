@@ -6,7 +6,7 @@ public class FirstTimePlayInfo : MonoBehaviour {
 	public string key;
 
 
-	void Start () {
+	void Awake () {
 		int shown = PlayerPrefsManager.GetInfoPopupShown (key);
 		if (shown != 0) // if shown already destroy
 			Destroy (gameObject);
