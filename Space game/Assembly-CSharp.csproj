@@ -54,6 +54,7 @@
      <Compile Include="Assets\scripts\Coins.cs" />
      <Compile Include="Assets\scripts\DebugRelock.cs" />
      <Compile Include="Assets\scripts\DisplayLeaderboard.cs" />
+     <Compile Include="Assets\scripts\EfficientSpawnerScript.cs" />
      <Compile Include="Assets\scripts\ExploitCatcher.cs" />
      <Compile Include="Assets\scripts\FadeIn.cs" />
      <Compile Include="Assets\scripts\FadeInActivator.cs" />

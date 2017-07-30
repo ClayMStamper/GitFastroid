@@ -18,7 +18,7 @@ public class GemSpawner : MonoBehaviour {
 		if (randNum == 1) { //arbitrary value. Just used to simulate randomness
 			Spawn ();
 		}
-		Debug.Log (rarenessMod);
+//		Debug.Log (rarenessMod);
 		rarenessMod = Mathf.Clamp (((int)(rareness - Score.score * 10)),100, 1500);
 	}
 	public void Spawn(){

@@ -10,7 +10,7 @@ public class Arrow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType <PlayerScript> ().gameObject;
+//		player = FindObjectOfType <PlayerScript> ().gameObject;
 		playerScript = FindObjectOfType <PlayerScript> ();
 		click = GetComponent <EventTrigger> ();
 	}
