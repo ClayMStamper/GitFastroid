@@ -87,6 +87,7 @@
      <Compile Include="Assets\scripts\ShipStatsManager.cs" />
      <Compile Include="Assets\scripts\ShopPanel.cs" />
      <Compile Include="Assets\scripts\Shredder.cs" />
+     <Compile Include="Assets\scripts\SliderFixer.cs" />
      <Compile Include="Assets\scripts\SpawnerScript.cs" />
      <Compile Include="Assets\scripts\Stamp.cs" />
      <Compile Include="Assets\scripts\StartVolume.cs" />
