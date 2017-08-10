@@ -20,7 +20,7 @@ public class AdManager : MonoBehaviour {
 		switch (result) {
 		case ShowResult.Finished:
 			Debug.Log ("add finished");
-			PlayerPrefsManager.AddGems (1);
+			PlayerPrefsManager.AddGems (Random.Range(3,5));
 			break;
 		case ShowResult.Skipped:
 			Debug.Log ("add skpped");
