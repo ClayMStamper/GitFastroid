@@ -7,20 +7,27 @@ public class GemSpawner : MonoBehaviour {
 	private float randX;
 	private float randY;
 	public float rareness;
-	int rarenessMod;
+	public int totalGemsSpawned;
 
-	void Start () {
-	
+	void Start(){
+		rareness = 15;
+		StartCoroutine (StartSpawning());
 	}
 
-	void FixedUpdate () { // fixed so that I don't penalize low frame rate players
-		int randNum = Random.Range (0, rarenessMod);
-		if (randNum == 1) { //arbitrary value. Just used to simulate randomness
-			Spawn ();
+	public IEnumerator StartSpawning(){
+		while (true) {
+			yield return new WaitForSeconds (Random.Range (0, rareness));
+			rareness -= Time.timeSinceLevelLoad / 20;
+			rareness = Mathf.Clamp (rareness, 2f, 30);
+			if (Random.value >= 0.5f) {
+				totalGemsSpawned++;
+				print (totalGemsSpawned);
+				Spawn ();
+			}
 		}
-//		Debug.Log (rarenessMod);
-		rarenessMod = Mathf.Clamp (((int)(rareness - Score.score * 10)),100, 1500);
+		yield return null;
 	}
+
 	public void Spawn(){
 		randX = Random.Range (-3, 3);
 		randY = Random.Range (-5, 5);

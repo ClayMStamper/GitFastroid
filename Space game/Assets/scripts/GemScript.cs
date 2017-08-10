@@ -12,7 +12,9 @@ public class GemScript : MonoBehaviour {
 			Debug.Log ("+ 1");
 			PlayerPrefsManager.AddGems (1);
 		}
-		Destroy (this.gameObject);
+		if (col.GetComponent <PlayerScript> () || col.GetComponent <AsteroidScript> () || col.GetComponent <Shredder> ()) {
+			Destroy (this.gameObject);
+		}
 	}
 	void Start(){ // just to see if the gem will move or not (odds are it wont)
 		int randNum = Random.Range (1, 6);
