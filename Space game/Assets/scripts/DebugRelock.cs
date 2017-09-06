@@ -5,6 +5,10 @@ public class DebugRelock : MonoBehaviour {
 
 	public GameObject buttonToLock;
 
+	void Start(){
+		print (PlayerPrefsManager.GetIfHighScoreAlreadyReset ());
+	}
+
 	public void Lock(){
 		PlayerPrefsManager.UnlockShip (buttonToLock.name, 0);
 	}
@@ -16,7 +20,11 @@ public class DebugRelock : MonoBehaviour {
 		PlayerPrefsManager.AddMoney (10000);
 	}
 	public void ResetHighscore(){
-		Highscore.highscore = 0;
-		PlayerPrefsManager.SetHighScore (0);
+		if (PlayerPrefsManager.GetIfHighScoreAlreadyReset () != 0) {
+			Highscore.highscore = 0;
+			PlayerPrefsManager.SetHighScore (0);
+		} else {
+			PlayerPrefsManager.SetHighScoreAlreadyReset ();
+		}
 	}
 }
