@@ -14,7 +14,8 @@ public class ScoreGUI : MonoBehaviour {
 	
 	public void UpdateText(){
 		myIndex.text = index;
-		myUsername.text = username;
+		string usernameWithSpace = username.Replace ("+", " ");
+		myUsername.text = usernameWithSpace;
 		myScore.text = score;
 	}
 }
