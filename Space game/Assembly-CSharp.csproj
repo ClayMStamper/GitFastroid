@@ -85,6 +85,7 @@
      <Compile Include="Assets\scripts\PopupAdPlayer.cs" />
      <Compile Include="Assets\scripts\PurchasePanel.cs" />
      <Compile Include="Assets\scripts\Score.cs" />
+     <Compile Include="Assets\scripts\ScoreGUI.cs" />
      <Compile Include="Assets\scripts\ShipLock.cs" />
      <Compile Include="Assets\scripts\ShipSelector.cs" />
      <Compile Include="Assets\scripts\ShipStatsManager.cs" />
