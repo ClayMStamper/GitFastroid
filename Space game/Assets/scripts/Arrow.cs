@@ -16,14 +16,14 @@ public class Arrow : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () {/*
 		if (player == null) {
 			player = FindObjectOfType <PlayerScript> ().gameObject;
 		} 
 		if (playerScript == null) {
 			playerScript = FindObjectOfType <PlayerScript> ();
 		} else
-			return;
+			return;*/
 	}
 	public void RightTurnTrue(){
 		playerScript.rightTurnBool = true;

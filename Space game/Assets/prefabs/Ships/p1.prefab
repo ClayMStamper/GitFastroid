@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedScaling: 0.15
   turnSpeedScaling: 0.1
-  flatTurnSpeed: 4
+  flatTurnSpeed: 5
   speedCap: 9999999
   turnSpeedCap: 100000000
   rightTurnBool: 0

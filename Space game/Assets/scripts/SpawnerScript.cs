@@ -11,6 +11,7 @@ public class SpawnerScript : MonoBehaviour {
 
 	void start(){
 		spawnerActive = true;
+		asteroidPrefab = SkinManager.GetInstance ().asteroid;
 	}
 
 	void Update () {
@@ -27,6 +28,10 @@ public class SpawnerScript : MonoBehaviour {
 		}
 	}
 	void Spawn(){
+		if (asteroidPrefab == null) {
+			print (SkinManager.GetInstance ().asteroid);
+			asteroidPrefab = SkinManager.GetInstance ().asteroid;
+		}
 		GameObject asteroid = Instantiate (asteroidPrefab) as GameObject;
 		asteroid.transform.parent = transform;
 		asteroid.transform.position = transform.position;

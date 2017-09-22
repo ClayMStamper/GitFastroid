@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: a190e2c01d001e24f811f04c6702edb2
+timeCreated: 1506045666
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: meteor (water)_0
+    21300002: meteor (water)_1
+    21300004: meteor (water)_2
+    21300006: meteor (water)_3
+    21300008: meteor (water)_4
+    21300010: meteor (water)_5
+    21300012: meteor (water)_6
+    21300014: meteor (water)_7
+    21300016: meteor (water)_8
+    21300018: meteor (water)_9
+    21300020: meteor (water)_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: meteor (water)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_1
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1640
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_2
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1640
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_3
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1640
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1232
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1232
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_6
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1232
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_7
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1232
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 824
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 824
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: meteor (water)_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 824
+        width: 234
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

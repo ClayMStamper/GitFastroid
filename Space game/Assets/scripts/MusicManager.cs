@@ -28,7 +28,7 @@ public class MusicManager : MonoBehaviour {
 				SwapTrack ();
 			}
 		} else{
-			if (audioSource.volume < 1) {
+			if (audioSource.volume < PlayerPrefsManager.GetMasterVolume()) {
 				audioSource.volume += Time.deltaTime * 2 ;
 			} 
 		}

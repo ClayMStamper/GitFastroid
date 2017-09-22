@@ -81,4 +81,10 @@ public class PlayerPrefsManager : MonoBehaviour {
 	public static int GetIfHighScoreAlreadyReset(){
 		return PlayerPrefs.GetInt ("highscorereset");
 	}
+	public static void SetPopUpShown(string name){
+		PlayerPrefs.SetInt (name, 1);
+	}
+	public static int GetPopUpShown(string name){
+		return PlayerPrefs.GetInt (name);
+	}
 }
