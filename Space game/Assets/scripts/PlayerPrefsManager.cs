@@ -87,4 +87,12 @@ public class PlayerPrefsManager : MonoBehaviour {
 	public static int GetPopUpShown(string name){
 		return PlayerPrefs.GetInt (name);
 	}
+	public static void SetNameClaimed (string key){
+		print ("claiming " + key);
+		PlayerPrefs.SetInt (key, 1); // takes in string + "KEY" as parameter
+	}
+	public static int GetIsNameClaimed (string key){
+		print ("checking " + key + "KEY for claimed");
+		return PlayerPrefs.GetInt (key + "KEY");
+	}
 }

@@ -12,7 +12,9 @@ public class Leaderboard : MonoBehaviour {
 
 	void Awake(){
 		AddNewHighscore (Name.name, (int) Highscore.highscore);
-		leaderboardDisplay = GetComponent <DisplayLeaderboard> ();
+		if (GetComponent <DisplayLeaderboard> ()) {
+			leaderboardDisplay = GetComponent <DisplayLeaderboard> ();
+		}
 	}
 		
 	public void AddNewHighscore(string name, int score){
@@ -20,6 +22,8 @@ public class Leaderboard : MonoBehaviour {
 	}
 	public void AddNewHighscore(){
 		StartCoroutine (UploadNewHighscore (Name.name, (int) Highscore.highscore));
+		PlayerPrefsManager.SetNameClaimed (Name.name + "KEY");
+		print (Name.name + "KEY");
 	}
 
 	IEnumerator UploadNewHighscore (string name, int score){
@@ -42,7 +46,12 @@ public class Leaderboard : MonoBehaviour {
 
 		if (string.IsNullOrEmpty (www.error)){
 			FormatHighscores (www.text);
-			leaderboardDisplay.OnHighscoresDownloaded (highscoresList);
+			if (leaderboardDisplay != null) {
+				leaderboardDisplay.OnHighscoresDownloaded (highscoresList);
+			} else {
+				print ("No leaderboard display");
+				FindObjectOfType <LeaderboardTracker> ().OnHighscoresDownloaded (highscoresList);
+			}
 		}
 		else
 			print ("Error downloading: " + www.error);

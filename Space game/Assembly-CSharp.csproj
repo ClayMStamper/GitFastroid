@@ -73,6 +73,7 @@
      <Compile Include="Assets\scripts\Instruction.cs" />
      <Compile Include="Assets\scripts\Leaderboard.cs" />
      <Compile Include="Assets\scripts\LeaderboardScroll.cs" />
+     <Compile Include="Assets\scripts\LeaderboardTracker.cs" />
      <Compile Include="Assets\scripts\LevelManager.cs" />
      <Compile Include="Assets\scripts\Money.cs" />
      <Compile Include="Assets\scripts\MusicManager.cs" />

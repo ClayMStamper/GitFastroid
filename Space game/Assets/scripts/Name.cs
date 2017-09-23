@@ -19,8 +19,30 @@ public class Name : MonoBehaviour {
 		name = FilterText (input.text);
 		PlayerPrefsManager.SetName (name);
 		input.text = name;
-
 	}
+	public void OnEndEdit(){
+		if (checkForDuplicateName (input.text) == true) {
+			print ("found duplicate name!");
+			name = "(NAME-TAKEN)";
+			input.text = "(NAME-TAKEN)";
+			PlayerPrefsManager.SetName ("");
+		}
+	}
+
+	bool checkForDuplicateName(string input){
+		input = input.ToLower ();
+		for (int i = 0; i < LeaderboardTracker.GetInstance ().highscores.Length; i++) {
+			if (input == LeaderboardTracker.GetInstance ().highscores [i].name) { // name is taken
+				if (PlayerPrefsManager.GetIsNameClaimed(input) == 1) {
+					print ("I own duplicated name");
+					return false;
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+
 	string FilterText (string input){
 		input = input.ToLower ();
 		for (int i = 0; i < swearWords.Length; i++){

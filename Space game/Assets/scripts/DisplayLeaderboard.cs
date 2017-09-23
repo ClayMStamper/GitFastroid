@@ -29,6 +29,9 @@ public class DisplayLeaderboard : MonoBehaviour {
 				highscoreText [i].GetComponent <ScoreGUI> ().username = "" + highscoreList [i].name;
 				highscoreText [i].GetComponent <ScoreGUI> ().score = "" + highscoreList [i].score;
 				highscoreText [i].GetComponent <ScoreGUI> ().UpdateText ();
+				if (PlayerPrefsManager.GetIsNameClaimed(highscoreList [i].name) == 1) { // set my names to highlight
+					highscoreText [i].GetComponent <ScoreGUI> ().isMyName = true;
+				}
 			} else
 				return;
 		}
