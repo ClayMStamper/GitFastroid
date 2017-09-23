@@ -95,4 +95,10 @@ public class PlayerPrefsManager : MonoBehaviour {
 		print (("checking " + key + "KEY for claimed").Replace("+", " "));
 		return PlayerPrefs.GetInt ((key + "KEY").Replace("+", " "));
 	}
+	public static void SetSkinUnlocked(string key){
+		PlayerPrefs.SetInt (key, 1);
+	}
+	public static int GetIsSkinUnlocked(string key){
+		return PlayerPrefs.GetInt (key);
+	}
 }
