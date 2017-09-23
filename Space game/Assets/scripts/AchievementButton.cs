@@ -5,8 +5,9 @@ using System.Collections;
 public class AchievementButton : MonoBehaviour {
 	
 	int myLeaderboardIndex;
+	public static AchievementButton selectedGem, selectedBackground, selectedAsteroid;
 	public bool asteroidType, gemType, backgroundType;
-	public bool unlocked, selected;
+	public bool unlocked;
 	public Sprite sprite;
 	public Image myImage, myBackgroundImage;
 	public GameObject myLock, selectedPanel;
@@ -19,6 +20,22 @@ public class AchievementButton : MonoBehaviour {
 		if (PlayerPrefsManager.GetIsSkinUnlocked (myPlayerPrefsUnlockKey) == 1) {
 			unlocked = true;
 		}
+		if (asteroidType) {
+			if (PlayerPrefsManager.GetSelectedSkin ("SelectedAsteroid") == myPlayerPrefsUnlockKey){
+				selectedPanel.transform.position = transform.position;
+			}
+		} else if (gemType) {
+			if (PlayerPrefsManager.GetSelectedSkin ("SelectedGem") == myPlayerPrefsUnlockKey){
+				selectedPanel.transform.position = transform.position;
+			}
+		} else if (backgroundType) {
+			if (PlayerPrefsManager.GetSelectedSkin ("SelectedBackground") == myPlayerPrefsUnlockKey){
+				selectedPanel.transform.position = transform.position;
+			}
+		} else {
+			Debug.LogError ("NO TYPE ON ACHIEVEMENT BUTTON");
+		}
+		//UNLOCK CONDITIONS
 		if (highScoreToBeat != 0) {
 			if (Highscore.highscore >= highScoreToBeat) {
 				unlocked = true;
@@ -45,7 +62,8 @@ public class AchievementButton : MonoBehaviour {
 		} else { //automatically unlocked
 			unlocked = true;
 		}
-
+			
+		// is unlocked start conditions
 		if (unlocked == true) {
 			PlayerPrefsManager.SetSkinUnlocked (myPlayerPrefsUnlockKey);
 			GetComponent <Button> ().interactable = true;
@@ -59,7 +77,20 @@ public class AchievementButton : MonoBehaviour {
 	}
 
 	public void SetSelected(){
-
+		print ("SETTING SELECTED");
+		selectedPanel.transform.position = transform.position;
+		if (gemType == true) {
+			PlayerPrefsManager.SetSelectedSkin ("SelectedGem", myPlayerPrefsUnlockKey);
+			EquipGemSkin ();
+		}
+		if (asteroidType == true) {
+			PlayerPrefsManager.SetSelectedSkin ("SelectedAsteroid", myPlayerPrefsUnlockKey);
+			EquipAsteroidSkin ();
+		}
+		if (backgroundType == true) {
+			PlayerPrefsManager.SetSelectedSkin ("SelectedBackground", myPlayerPrefsUnlockKey);
+			EquipBackgroundSkin ();
+		}
 	}
 
 	public void EquipGemSkin(){

@@ -101,4 +101,10 @@ public class PlayerPrefsManager : MonoBehaviour {
 	public static int GetIsSkinUnlocked(string key){
 		return PlayerPrefs.GetInt (key);
 	}
+	public static void SetSelectedSkin (string key, string skinKey){
+		PlayerPrefs.SetString (key, skinKey);
+	}
+	public static string GetSelectedSkin(string key){
+		return PlayerPrefs.GetString (key);
+	}
 }
