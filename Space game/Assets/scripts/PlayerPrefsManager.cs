@@ -92,7 +92,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 		PlayerPrefs.SetInt (key, 1); // takes in string + "KEY" as parameter
 	}
 	public static int GetIsNameClaimed (string key){
-		print ("checking " + key + "KEY for claimed");
-		return PlayerPrefs.GetInt (key + "KEY");
+		print (("checking " + key + "KEY for claimed").Replace("+", " "));
+		return PlayerPrefs.GetInt ((key + "KEY").Replace("+", " "));
 	}
 }

@@ -29,7 +29,7 @@ public class GemSpawner : MonoBehaviour {
 	}
 
 	public void Spawn(){
-		randX = Random.Range (-3, 3);
+		randX = Random.Range (-2.75f, 2.75f);
 		randY = Random.Range (-5, 5);
 		Vector3 gemPos = new Vector3 (randX, randY, 0);
 		GameObject newGem = Instantiate (gem, gemPos, Quaternion.identity) as GameObject;

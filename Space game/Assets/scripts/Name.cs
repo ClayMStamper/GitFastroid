@@ -7,6 +7,7 @@ public class Name : MonoBehaviour {
 	public static string name;
 	InputField input;
 	public string[] swearWords;
+	public GameObject popupArrow;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,7 @@ public class Name : MonoBehaviour {
 		input.text = name;
 	}
 	public void OnEndEdit(){
+		FindObjectOfType <NameChangeWarning> ().UpdateWarning ();
 		if (checkForDuplicateName (input.text) == true) {
 			print ("found duplicate name!");
 			name = "(NAME-TAKEN)";
@@ -44,6 +46,7 @@ public class Name : MonoBehaviour {
 	}
 
 	string FilterText (string input){
+		popupArrow.SetActive (false);
 		input = input.ToLower ();
 		for (int i = 0; i < swearWords.Length; i++){
 			if (input.Contains (swearWords[i])){

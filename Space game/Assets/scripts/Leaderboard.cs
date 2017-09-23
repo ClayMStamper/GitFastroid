@@ -21,9 +21,10 @@ public class Leaderboard : MonoBehaviour {
 		StartCoroutine (UploadNewHighscore (name, score));
 	}
 	public void AddNewHighscore(){
+		if (Name.name == "(name-taken)" || Name.name == "") {
+			return;
+		}
 		StartCoroutine (UploadNewHighscore (Name.name, (int) Highscore.highscore));
-		PlayerPrefsManager.SetNameClaimed (Name.name + "KEY");
-		print (Name.name + "KEY");
 	}
 
 	IEnumerator UploadNewHighscore (string name, int score){
@@ -48,6 +49,9 @@ public class Leaderboard : MonoBehaviour {
 			FormatHighscores (www.text);
 			if (leaderboardDisplay != null) {
 				leaderboardDisplay.OnHighscoresDownloaded (highscoresList);
+				print (Name.name + "KEY");
+				PlayerPrefsManager.SetNameClaimed (Name.name + "KEY");
+				//leaderboardDisplay.SetHighlightedNames (highscoresList);
 			} else {
 				print ("No leaderboard display");
 				FindObjectOfType <LeaderboardTracker> ().OnHighscoresDownloaded (highscoresList);

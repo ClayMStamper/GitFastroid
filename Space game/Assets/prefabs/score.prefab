@@ -190,6 +190,8 @@ MonoBehaviour:
   myIndex: {fileID: 114000012255518054}
   myUsername: {fileID: 114000014054781860}
   myScore: {fileID: 114000012302601174}
+  isMyName: 0
+  myBG: {fileID: 114000013196483798}
 --- !u!114 &114000014054781860
 MonoBehaviour:
   m_ObjectHideFlags: 1

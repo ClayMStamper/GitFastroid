@@ -14,9 +14,9 @@ public class DisplayLeaderboard : MonoBehaviour {
 			highscoreText [i].gameObject.transform.position = newPos;
 		}
 		for (int i = 0; i < highscoreText.Length; i++) {
-			highscoreText [i].GetComponent <ScoreGUI>().index = i + 1 + ". Fetching...";
+			highscoreText [i].GetComponent <ScoreGUI>().username = (i + 1) + ". Fetching...";
+			highscoreText [i].GetComponent <ScoreGUI> ().UpdateText ();
 		}
-
 		leaderboard = GetComponent <Leaderboard> ();
 
 		StartCoroutine ("RefreshHighscores");
@@ -29,7 +29,7 @@ public class DisplayLeaderboard : MonoBehaviour {
 				highscoreText [i].GetComponent <ScoreGUI> ().username = "" + highscoreList [i].name;
 				highscoreText [i].GetComponent <ScoreGUI> ().score = "" + highscoreList [i].score;
 				highscoreText [i].GetComponent <ScoreGUI> ().UpdateText ();
-				if (PlayerPrefsManager.GetIsNameClaimed(highscoreList [i].name) == 1) { // set my names to highlight
+				if (PlayerPrefsManager.GetIsNameClaimed(highscoreList [i].name.Replace ("=", " ")) == 1) { // set my names to highlight
 					highscoreText [i].GetComponent <ScoreGUI> ().isMyName = true;
 				}
 			} else

@@ -2588,6 +2588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf307378fc747e14a81cb2918f35fa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popupArrow: {fileID: 0}
 --- !u!4 &279070990
 Transform:
   m_ObjectHideFlags: 0
@@ -6300,7 +6301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadePanel:
   - {fileID: 224455692}
-  - {fileID: 0}
 --- !u!4 &819542510
 Transform:
   m_ObjectHideFlags: 0

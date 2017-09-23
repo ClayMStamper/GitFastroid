@@ -78,6 +78,7 @@
      <Compile Include="Assets\scripts\Money.cs" />
      <Compile Include="Assets\scripts\MusicManager.cs" />
      <Compile Include="Assets\scripts\Name.cs" />
+     <Compile Include="Assets\scripts\NameChangeWarning.cs" />
      <Compile Include="Assets\scripts\PlayMP4.cs" />
      <Compile Include="Assets\scripts\PlayerPrefsManager.cs" />
      <Compile Include="Assets\scripts\PlayerScript.cs" />
