@@ -91,7 +91,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 		print ("claiming " + key);
 		PlayerPrefs.SetInt (key, 1); // takes in string + "KEY" as parameter
 	}
-	public static int GetIsNameClaimed (string key){
+	public static int GetIsNameClaimed (string key){ //checks to see if name is claimed BY USER CALLING (not in general)
 		print (("checking " + key + "KEY for claimed").Replace("+", " "));
 		return PlayerPrefs.GetInt ((key + "KEY").Replace("+", " "));
 	}

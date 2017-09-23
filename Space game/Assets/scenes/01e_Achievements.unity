@@ -90,6 +90,63 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &26692250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 26692253}
+  - 114: {fileID: 26692252}
+  - 114: {fileID: 26692251}
+  m_Layer: 0
+  m_Name: LeaderboardTacker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &26692251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26692250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ebb83f6bdcedbb4d8c6cfdcacbf9591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publicCode: 591cf48e438a0c024c9e2b11
+  webURL: http://dreamlo.com/lb/
+  leaderboardDisplay: {fileID: 0}
+--- !u!114 &26692252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26692250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a264f4e151909c49be5c7ddd9272ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myNames:
+  - cstamp
+--- !u!4 &26692253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26692250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &29933180
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +187,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &36740152
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +348,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &210568591
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,8 +422,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719793170}
   m_HandleRect: {fileID: 1719793169}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.30684954
+  m_Value: 0.5
+  m_Size: 0.3068495
   m_NumberOfSteps: 3
   m_OnValueChanged:
     m_PersistentCalls:
@@ -476,7 +533,7 @@ RectTransform:
   - {fileID: 1408219254}
   - {fileID: 1383820322}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -737,6 +794,7 @@ GameObject:
   - 222: {fileID: 550107821}
   - 114: {fileID: 550107820}
   - 114: {fileID: 550107819}
+  - 114: {fileID: 550107822}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -836,6 +894,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550107817}
+--- !u!114 &550107822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 550107817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe807b9d110a464b8ddb0244f433495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlocked: 0
+  sprite: {fileID: 0}
+  highScoreToBeat: 0
+  leaderBoardIndex: 5
+  gemsAtOnce: 0
+  moneyAtOnce: 0
 --- !u!1 &565754645
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +952,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &617164998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1101,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &762213171 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011860295654, guid: 93b5986098699aa4da23d28c240aaf16,
@@ -1521,7 +1596,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237.18726, y: 96}
+  m_AnchoredPosition: {x: 0, y: 96}
   m_SizeDelta: {x: 365, y: 660}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643351000
@@ -1665,4 +1740,4 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5

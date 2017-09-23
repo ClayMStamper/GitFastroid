@@ -70,7 +70,7 @@ public class Leaderboard : MonoBehaviour {
 			string name = entryInfo [0];
 			int score = int.Parse (entryInfo [1]);
 			highscoresList [i] = new Score (name, score);
-			print (highscoresList [i].name + ": " + highscoresList [i].score);
+			//print (highscoresList [i].name + ": " + highscoresList [i].score);
 		}
 	}
 

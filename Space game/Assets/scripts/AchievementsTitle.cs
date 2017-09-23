@@ -9,12 +9,12 @@ public class AchievementsTitle : MonoBehaviour {
 
 	public void Start () {
 		//AchievementTitle = GetComponent <Text> ();
-		print ( AchievementSlider.value);
+//		print ( AchievementSlider.value);
 		if (AchievementSlider.value <= 0) {
 			AchievementTitle.text = "Background Skins";
 		} else if (AchievementSlider.value == 0.5f) {
 			AchievementTitle.text = "Asteroid Skins";
-			print ("working");
+//			print ("working");
 		} else {
 			AchievementTitle.text = "Gem Skins";
 		}
