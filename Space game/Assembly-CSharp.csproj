@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\README.cs" />
+     <Compile Include="Assets\scripts\AchievementsTitle.cs" />
      <Compile Include="Assets\scripts\AdManager.cs" />
      <Compile Include="Assets\scripts\Arrow.cs" />
      <Compile Include="Assets\scripts\AsteroidScript.cs" />
