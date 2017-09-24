@@ -38,9 +38,13 @@ public class DisplayLeaderboard : MonoBehaviour {
 	}
 
 	IEnumerator RefreshHighscores() {
+		int i = 1;
 		while (true) {
 			leaderboard.DownloadHighscores ();
-			yield return new WaitForSeconds (30);
+			yield return new WaitForSeconds (i);
+			if (i <= 1) {
+				i = 30;
+			}
 		}
 	}
 }

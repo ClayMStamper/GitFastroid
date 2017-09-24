@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedScaling: 0.1
-  turnSpeedScaling: 0.11
-  flatTurnSpeed: 2
+  turnSpeedScaling: 0.09
+  flatTurnSpeed: 4
   speedCap: 4
   turnSpeedCap: 30
   rightTurnBool: 0

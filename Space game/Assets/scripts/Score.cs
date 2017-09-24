@@ -17,7 +17,11 @@ public class Score : MonoBehaviour {
 	void Update () {
 		if (PlayerScript.alive == true) {
 			score += Time.deltaTime;
-			text.text = "Score: " + score;
+			if (score < Highscore.highscore) {
+				text.text = "Score: " + score;
+			} else {
+				text.text = "New Highscore: " + score;
+			}
 		} 
 		else if (moneyAddedYet == false) { // if player is dead and score hasnt been added to money yet
 			moneyAddedYet = true;          // then add score to money once
